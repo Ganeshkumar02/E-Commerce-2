@@ -1,0 +1,128 @@
+.dashboard-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.sidebar{
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar h3{
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+.sidebar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li{
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.main-content{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.profile-picture{
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.profile-name{
+    font-weight: bold;
+    font-size: 16px;
+    
+
+}
+.view-title{
+    font-size: 25px;
+}
+.content{
+    padding: 20px;
+    overflow-y: auto;
+    flex:1;
+}
+
+  
+  .theme-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .toggle-btn {
+    padding: 5px 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: #0056b3;
+  }
+  
+  .color-icon-container {
+    position: relative;
+  }
+  
+  .color-icon {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #ddd;
+  }
+  
+  .color-picker-dropdown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    z-index: 1000;
+  }
+
+  .logout-button {
+    background-color: #07500a; 
+    color: white;            
+    border: none;             
+    padding: 5px 20px; 
+    margin-top: 10px;
+    margin-right:15px;    
+    border-radius: 5px;      
+    cursor: pointer;          
+    font-size: 16px;          
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #ff3333; 
+}
+
